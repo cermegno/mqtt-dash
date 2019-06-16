@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+
+	<div class="text-center">
+		<h2>Pied Piper IoT Readings</h2>
+	</div>
+	
+    <div class="panel-body">
+		<table class="table table-striped">
+			<tr class="success"><th>Location	<th>Temperature	<th>Humidity
+			{% for r in readings %}
+			<tr><td>{{ r.loc }}	<td>{{ r.tem }} C	<td>{{ r.hum }}%
+			{% endfor %}
+		</table>
+	</div>
+
+	<div class="text-center">
+		<img src="static/logo.png">
+	</div>
+
+</div>
+{% endblock %}
