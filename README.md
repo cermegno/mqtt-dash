@@ -2,7 +2,7 @@
 Python scripts to subscribe to MQTT topic and create a dashboard with the readings. This is part of the Pied Piper training program. 
 
 ## MQTT Subscriber
-- "mqtt-sub.py" tunes in to a configurable MQTT topic
+- "edgex-mqtt-sub.py" tunes in to a configurable MQTT topic
 - writes incoming messages to a configuration Redis database
 - every student in the classroom specifies their name as the location
 - only the latest values are kept in Redis
